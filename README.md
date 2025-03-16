@@ -1,5 +1,6 @@
-# Vue 3 + Vite
+# Vue Personal Website Project
+This project serves a way to my progress in learning Vue and the other subjects present in my Web Programming course at GSU.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Currently the website allows you to toggle through three pages: Home, Projects, and Contact which show off the various ways Vue can be used in a website.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+To run the website you need to have Node and npm installed. Once you do, download the code and open the file location in the terminal and run 'npm run dev'. This should create a link that you can follow to view the website.
