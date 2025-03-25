@@ -7,11 +7,23 @@
     </nav>
 
     <div v-if="section === 'home'">
-      <h1>Carson's Website</h1>
-      <p v-if="showWelcome">Welcom to my website! Click the button to show that you visited!</p>
+      <h1>HW3 Website</h1>
+      <p v-if="showWelcome">Welcom to my website! Click the button to show that you visited!
+        <br>
+        <img src="https://i.etsystatic.com/28810262/r/il/2fc5e0/5785166966/il_fullxfull.5785166966_nvy4.jpg" alt="" width="200" height="200">
+      </p>
+      
       <button @click="showWelcome = !showWelcome">
         {{ showWelcome ? 'Hide Welcome Message' : 'Show Welcome Message' }}
       </button>
+      
+      <div>
+      <h3>Visitor Counter: {{ counter }}</h3>
+      <button @click="counter++">Click Me!</button>
+      <div v-if="counter > 5">
+        <img src="https://static-00.iconduck.com/assets.00/exploding-head-emoji-1827x2048-gmcrdgdr.png" alt="" width="200" height="200">
+      </div>
+    </div>
     </div>
 
     <div v-if="section === 'projects'">
@@ -39,10 +51,7 @@
       </form>
     </div>
 
-    <div>
-      <h3>Visitor Counter: {{ counter }}</h3>
-      <button @click="counter++">Click Me!</button>
-    </div>
+    
   </div>
 </template>
 
